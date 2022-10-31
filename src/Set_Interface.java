@@ -8,7 +8,7 @@ import java.util.Set;
  Выводит элементы в рандомном порядке
 */
 
-public class Set_Class {
+public class Set_Interface {
     public static void main(String[] args) {
         Set<String> set = new HashSet<>();
         set.add("one");
@@ -64,8 +64,15 @@ public class Set_Class {
 
             TREESET
         Элементы сортируются по возрастанию
-        Это определяется методом compareTo/compare
+        Это определяется методом compareTo/compare (см. файл)
         Если согласно ему объекты равны, то в множестве останется лишь один из них
+
+            NAVIGABLESET
+            Добавляет методы к SortedSet:
+        E ceiling(E obj) - наименьший элемент, т.ч.  е >= obj,  иначе null
+        Е floor(Е obj)      е <= obj
+        Е higher(Е obj)     е > obj
+        Е lower(Е obj)      е < obj
         */
 
     }
